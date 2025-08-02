@@ -17,7 +17,12 @@ print("a / b:", a/b)
 print("Floor Division -> a // b:", a//b)
 print("a % b:", a%b)
 print("a^b or (Exponentiation) -> a ** b:", a**b)
-print("\nIMPORTANT NOTE: All other operators have  ## Left to Right ##  calculating process but,")
+print("Absolute value of any number can be given by abs() func. For Example:\nabs(-35) =", abs(-35))
+# If we try for arithmetic operations on boolean True and False, they inherit 1 and 0 value respectively
+# Hence True + True = 1 + 1 = 2
+print("\nArithmetic values for True(1) and False(0):", "\nTrue + True:", True + True,
+      "\nFalse + False:", False + False,"\nTrue * False:", True * False)
+print("\n\nIMPORTANT NOTE: All other operators have  ## Left to Right ##  calculating process but,")
 print("for exponentiation or ** operator alone the calculation happens from  ## Right to Left ##")
 print("For example: 2**2**-1, is calculated as: ")
 print("2**2**-1 = 2**(2** -1) = 2**(1/2) = 2**(0.5) = Square Root of 2 = 1.41...")
@@ -149,4 +154,6 @@ l3 = None
 l4 = None
 print("l1 is l2",l1 is l2)
 print("l3 is l4",l3 is l4)
+print("The same way we can try for Boolean as below:\nTrue is False:",True is False)
+print("True is not False:",True is not False)
 # print("",)
