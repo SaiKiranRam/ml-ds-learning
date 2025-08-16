@@ -1,12 +1,11 @@
 # Syntax of for loop
 # for var in iterable:
 #   <Statement_Block>
-from Tools.scripts.make_ctype import values
 
 # For loop with lists
-list = ["Python", "Data Structures", "Machine Learning", "Data Science"]
+myList = ["Python", "Data Structures", "Machine Learning", "Data Science"]
 print("The topics under the subject are:")
-for concept in list:
+for concept in myList:
     print(f"\t{concept}")
 
 # For loop with Dictionary
@@ -32,6 +31,12 @@ for num in range(10):
     print(num, end=' ')#    0 1 2 3 4 5 6 7 8 9
 
 print()
+# For loop with range in reverse, with 10 as starting till -1 (exclusive), with an iteration update of -1
+# Only for integers
+for num in range(10, -1, -1):
+    print(num, end=' ')#    10 9 8 7 6 5 4 3 2 1 0
+
+print()
 # Nested for loops
 for num in range(2):
     for num2 in range(3):
@@ -46,8 +51,14 @@ for num in range(2):
 print()
 # The enumerate function:
 # The enumerate function is used to obtain both index and value during iteration
-for index, value in enumerate(list): #  list assigned in Line# 7
+print(myList) # ['Python', 'Data Structures', 'Machine Learning', 'Data Science']
+for index, value in enumerate(myList):
     print(f"The value at {index} in the list is: {value}")
+# The value at 0 in the list is: Python
+# The value at 1 in the list is: Data Structures
+# The value at 2 in the list is: Machine Learning
+# The value at 3 in the list is: Data Science
+
 
 print()
 # List comprehension provides a concise way to assign values into the list

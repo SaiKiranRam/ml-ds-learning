@@ -10,7 +10,7 @@ while limit >= counter:
 # in loop and proceed for next iteration
 counter = 5
 while counter >= limit:
-    if(counter % 2 == 0):
+    if counter % 2 == 0:
         print(f"The value {counter} is even. Going to next iteration")
         counter -= 1
         continue
@@ -21,7 +21,7 @@ while counter >= limit:
 age = 18
 while True:
     print("Simulation of some code execution......")
-    if(age < 18):# Not an adult
+    if age < 18:# Not an adult
         print("Only adults (age equal or greater than 18 years) are allowed to cast the vote")
         break
     print("You're eligible to cast the vote. Please select any one option to which you would like to cast your vote")

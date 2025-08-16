@@ -2,7 +2,7 @@
 # blocks based on certain conditions.
 # In Python, the if-else statement is a powerful tool for incorporating decision-making logic into your programs.
 
-# The if, elif and else Statement:
+# If, elif and else Statement:
 # Syntax below:
 x = int(input("Please Enter any integer value: "))
 if x > 0: # if followed by a condition and then with a ':'
@@ -21,8 +21,8 @@ else:
     print(x, 'is zero. Hence its neither a negative nor positive number')
     print("Of all the numbers you could enter, you wanted to put zero??🧐")
 
-# Short-hand if-else statement
-# Single line both condtions and conditional statements can be executed
+# Shorthand if-else statement
+# Single line both conditions and conditional statements can be executed
 age = 19
 isAdult = True if age >= 18 else False
 print(f"Will a person with {age} be considered as an adult: {isAdult}")
