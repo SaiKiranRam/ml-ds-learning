@@ -1,26 +1,26 @@
-# # Taking an input and printing it
-# name = input("Hello There This is an AI ML course python prompt. Whats your name by the way?")
-# # Note that below print function doesn't explicitly have spaces between the usual string and variables since
-# # they're comma separated, the python will automatically take care of the spaces
-# print("Welcome,", name, "! Let's jump into the course and create new apps 😄💪")
-#
-#
-# name = input("Please enter the name of your headache: ")
-# # For String/text, typecasting isn't required as Python will automatically consider the input as String/text
-# # Typecasting input with int() converts the data into int type
-# age = int(input("Please enter headache's age: "))
-# city = input("Enter headache's city: ")
-# print("Details you've entered are :")
-# print(name, age, city) # Note that the variables are only comma separated. Bellow will be formatted for brevity
-# print("Name:", name)
-# print("Age:", age)
-# print("City:", city)
-from reprlib import aRepr
+# Taking an input and printing it
+name = input("Hello There! This is an AI ML course python prompt. What's your name by the way?")
+# Note that below print function doesn't explicitly have spaces between the usual string and variables since
+# they're comma separated, the python will automatically take care of the spaces
+print("Welcome,", name, "! Let's jump into the course and create new apps 😄💪")
 
+
+name = input("Please enter the name of your headache: ")
+# For String/text, typecasting isn't required as Python will automatically consider the input as String/text
+# Typecasting input with int() converts the data into int type
+age = int(input("Please enter headache's age: "))
+city = input("Enter headache's city: ")
+print("Details you've entered are :")
+print(name, age, city) # Note that the variables are only comma separated. Bellow will be formatted for brevity
+print("Name:", name)
+print("Age:", age)
+print("City:", city)
 # ______________________________________________________________________________________________________________________
 
 # Taking multiple space-separated inputs from console and printing it
 x, y = input("Enter number of boys and girls in your class respectively:").split()
+# NOTE: the .split90 is defined for string type only, hence typecasting int() or any other data type on input
+#     and then splitting to assign multiple variables will not work
 print() # By default, prints new line
 boysNumber = "Number of boys:", x
 girlsNumber = "Number of girls:", y
@@ -46,7 +46,7 @@ print("Entered number of students:", z, "\nWhile the actual total is:", totalNum
 
 # Typecasting the input/int/string to float using float() function
 boysRatio = float(int(x) / totalNumber)
-print("Ratio of boys to to total students in decimals:", boysRatio) # Prints boysRatio as 0.3333333333333333
+print("Ratio of boys to to total students in decimals:", boysRatio) # For example Prints 0.3333333333333333 ( many trailing numbers)
 print("Formatting above decimal result into nearest 2 decimals: ${:.2f}".format(boysRatio))
 
 
