@@ -11,12 +11,16 @@ print("\nString concatenation involves combining multiple strings\n"
 str1 = "Python"
 str2 = "Data Science"
 print("str1:",str1, "\tstr2:",str2)
-print("Concatenated result from str1 + str2:", str1 + str2)
+print("Concatenated result from str1 + str2:", str1 + str2) # PythonData Science
+
+
 print("\n" + "#"*50)
 print("\tString Length")
 print("#"*50)
 print("The len() function returns the length (number of characters) of a string.")
-print("Length of str1:", len(str1))
+print("Length of str1:", len(str1)) # 6
+
+
 print("\n" + "#"*50)
 print("\tString Slicing")
 print("#"*50)
@@ -30,6 +34,8 @@ print("Slicing characters from 5 (inclusive index) to 15(exclusive index):", sam
 print("Slicing characters from 5 till end of string:", sample[5:])
 print("Slicing characters from 0 (start) till  to 15(exclusive index):", sample[:15])
 print("Slicing characters from 1 (start) till  to -1(exclusive index):", sample[1:-1])
+
+
 print("\n" + "#"*50)
 print("\tString Case Conversion")
 print("#"*50)
@@ -47,16 +53,16 @@ print("Stripping functions remove any leading or trailing whitespaces in a strin
       "\n\t2) lstrip() -> removes leading whitespaces of the string",
       "\n\t3) rstrip() -> removes trailing whitespaces of the string")
 whiteSpacedString = "      random text data      "
-print("Sample test string, whiteSpacedString: '" + whiteSpacedString + "'")
-print("whiteSpacedString.strip(): '" + whiteSpacedString.strip() + "'")
-print("whiteSpacedString.lstrip(): " + whiteSpacedString.lstrip() + "'")
-print("whiteSpacedString.rstrip(): '" + whiteSpacedString.rstrip() + "'")
+print("Sample test string, whiteSpacedString: '" + whiteSpacedString + "'") # '      random text data      '
+print("whiteSpacedString.strip(): '" + whiteSpacedString.strip() + "'") # 'random text data'
+print("whiteSpacedString.lstrip(): " + whiteSpacedString.lstrip() + "'") # 'random text data      '
+print("whiteSpacedString.rstrip(): '" + whiteSpacedString.rstrip() + "'") # '      random text data'
 
 print("\n" + "#"*50)
 print("\tString Replacing")
 print("#"*50)
 print("Python replace() method replaces one substring with another")
-level = "I'm beginner in Python"
+level = "I'm a Python beginner"
 updated_level = level.replace('beginner', 'expert')
 print("Initial value of level:", level, "\nupdated_level:", updated_level)
 
@@ -67,7 +73,6 @@ print("The count() function provides the count of occurrence of any specific sub
 testString = "This is a test string for learning python string functions"
 print('Sample variable testString:', testString)
 print("Let's count the occurrence of 'i' in the given testString:", testString.count("i"))
-print("Let's count the occurrence of 'i' in the given testString:", testString.count("i"))
 print("Let's count the occurrence of 'is' in the given testString:", testString.count("is"))
 
 print("\n" + "#"*50)
@@ -75,8 +80,8 @@ print("\tString Find")
 print("#"*50)
 print("The find() function returns the index of first occurrence of the substring, if not found then returns -1")
 print("testString:",testString)
-print("Index of the word 'string' in the testString", testString.find('string'))
-print("Index of the word 'STRING' in the testString", testString.find('STRING'))
+print("Index of the word 'string' in the testString", testString.find('string')) # 15
+print("Index of the word 'STRING' in the testString", testString.find('STRING')) # -1
 
 print("\n" + "#"*50)
 print("\tString Check")
@@ -86,34 +91,34 @@ print("Multiple functions to test the nature of a string",
       "\n\t2) isdigit() -> checks if given string contains digit(s) only",
       "\n\t3) islower() -> checks if given string contains lower cased characters only"
       "\n\t4) isupper() -> checks if given string contains upper cased characters only, etc........")
-print("Example of isalpha() with", "Only words -> \n\t'abcd'", "abcd".isalpha(),
-      "\n\tSpecial characters -> 'ab_cd'", 'ab_cd'.isalpha(),
-      "\n\t'Word and Numbers -> abcd123'", 'abcd123'.isalpha(),
-      "\n\tFloating String -> '2.0'", "2.0".isalpha(),
-      "\n\tInteger as string -> '2'", '2'.isalpha())
-print("\nExample of isdigit() with", "Only words -> \n\t'abcd'", "abcd".isdigit(),
-      "\n\tSpecial characters -> 'ab_cd'", 'ab_cd'.isdigit(),
-      "\n\t'Word and Numbers -> abcd123'", 'abcd123'.isdigit(),
-      "\n\tFloating String -> '2.0'", "2.0".isdigit(),
-      "\n\tInteger as string -> '2'", '2'.isdigit())
-print("\nExample of islower() with", "Only words -> \n\t'abcd'", "abcd".islower(),
-      "\n\tSpecial characters -> 'ab_cd'", 'ab_cd'.islower(),
-      "\n\t'Word and Numbers -> AB_CD'", 'AB_CD'.islower(),
-      "\n\tFloating String -> 'ABCD'", "ABCD".islower())
-print("\nExample of isupper() with", "Only words -> \n\t'abcd'", "abcd".isupper(),
-      "\n\tSpecial characters -> 'ab_cd'", 'ab_cd'.isupper(),
-      "\n\t'Word and Numbers -> AB_CD'", 'AB_CD'.isupper(),
-      "\n\tFloating String -> 'ABCD'", "ABCD".isupper())
+print("Example of isalpha() with", "Only words -> \n\t'abcd'", "abcd".isalpha(), # True
+      "\n\tSpecial characters -> 'ab_cd'", 'ab_cd'.isalpha(), # False
+      "\n\t'Word and Numbers -> abcd123'", 'abcd123'.isalpha(), # False
+      "\n\tFloating String -> '2.0'", "2.0".isalpha(), # False
+      "\n\tInteger as string -> '2'", '2'.isalpha()) # False
+print("\nExample of isdigit() with", "Only words -> \n\t'abcd'", "abcd".isdigit(), # False
+      "\n\tSpecial characters -> 'ab_cd'", 'ab_cd'.isdigit(), # False
+      "\n\t'Word and Numbers -> abcd123'", 'abcd123'.isdigit(), # False
+      "\n\tFloating String -> '2.0'", "2.0".isdigit(), # False
+      "\n\tInteger as string -> '2'", '2'.isdigit()) # True
+print("\nExample of islower() with", "Only words -> \n\t'abcd'", "abcd".islower(), # True
+      "\n\tSpecial characters -> 'ab_cd'", 'ab_cd'.islower(), # True
+      "\n\t'Word and Numbers -> AB_CD'", 'AB_CD'.islower(), # False
+      "\n\tFloating String -> 'ABCD'", "ABCD".islower()) # False
+print("\nExample of isupper() with", "Only words -> \n\t'abcd'", "abcd".isupper(), # False
+      "\n\tSpecial characters -> 'ab_cd'", 'ab_cd'.isupper(), # False
+      "\n\t'Word and Numbers -> AB_CD'", 'AB_CD'.isupper(), # True
+      "\n\tFloating String -> 'ABCD'", "ABCD".isupper()) # True
 
 print("\n" + "#"*50)
 print("\tString Check for Start and End")
 print("#"*50)
 print("For any substring we can check for start and end of a given string with functions startswith() and endswith() respectively")
 print('Sample variable testString:', testString)
-print("Does the string starts with 'This is a' substring:", testString.startswith('This is a'))
-print("Does the string ends with 'This is a' substring:", testString.endswith('This is a'))
-print("Does the string starts with 'python string functions' substring:", testString.startswith('python string functions'))
-print("Does the string ends with 'python string functions' substring:", testString.endswith('python string functions'))
+print("Does the string starts with 'This is a' substring:", testString.startswith('This is a')) # True
+print("Does the string ends with 'This is a' substring:", testString.endswith('This is a')) # False
+print("Does the string starts with 'python string functions' substring:", testString.startswith('python string functions')) # False
+print("Does the string ends with 'python string functions' substring:", testString.endswith('python string functions')) # True
 
 print("\n" + "#"*50)
 print("\tString Formatting")
@@ -126,4 +131,4 @@ print("Function format() prints in default order:", FormatedString1) # Beginner 
 FormatedString2 = "{1} {0} {2}".format("Beginner", "in", "Python")
 print("Function with numerical format() prints in provided order:", FormatedString2) # in Beginner Python
 FormatedString3 = '{a} {b} {c}'.format(a = 'Abba', b = 'Dabba', c = 'Jabba')
-print("String in order of Keywords:", FormatedString3)
+print("String in order of Keywords:", FormatedString3) # String in order of Keywords: Abba Dabba Jabba
